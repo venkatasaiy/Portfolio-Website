@@ -2022,6 +2022,38 @@ footer::before {
     }
 }
 
+/* Mobile timeline fixes: ensure items appear above the vertical line and are visible
+     even if animations/JS don't trigger. Adjust max-width to match your existing breakpoints. */
+@media (max-width: 1000px) {
+    .timeline {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Move the vertical line to the left and keep it behind items */
+    .timeline::before {
+        left: 30px;
+        transform: none;
+    }
+
+    /* Make each item full-width and shift content to the right of the line */
+    .timeline-item {
+        width: calc(100% - 60px) !important;
+        left: 0 !important;
+        padding-left: 60px !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+        /* Ensure items are on top of the ::before line */
+        z-index: 2;
+    }
+
+    /* Ensure the inner content sits above the line */
+    .timeline-item .timeline-content {
+        position: relative;
+        z-index: 3;
+    }
+}
+
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 2.4rem;
