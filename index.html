@@ -2,445 +2,466 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Portfolio of Venkata Sai Yandeti - AI & Machine Learning Engineer specializing in intelligent systems and cybersecurity">
+    <meta name="keywords" content="AI Engineer, Machine Learning, Cybersecurity, Portfolio, Venkata Sai Yandeti">
+    <meta name="author" content="Venkata Sai Yandeti">
     <title>Venkata Sai Yandeti | AI & Machine Learning Engineer</title>
     <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="preconnect" href="https://prod.spline.design">
+    <link rel="dns-prefetch" href="https://prod.spline.design">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/@splinetool/viewer@1.9.26/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/@splinetool/viewer@1.9.26/build/spline-viewer.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
     <div class="cinematic-loader" id="loader">
         <div class="cinematic-title">VENKATA SAI YANDETI</div>
         <div class="cinematic-subtitle">AI & Machine Learning Engineer</div>
     </div>
-    <nav class="navbar">
+    
+    <header class="navbar">
         <div class="container">
             <div class="logo">VENKATA SAI YANDETI</div>
-            <button class="mobile-toggle">
+            <button class="mobile-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="nav-links">
-                <a href="#home" class="active">Home</a>
+                <a href="#home" class="active" aria-current="page">Home</a>
                 <a href="#about">About</a>
                 <a href="#education">Education</a>
                 <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
                 <a href="#certifications">Certifications</a>
                 <a href="#contact">Contact</a>
-                <button class="resume-btn" id="downloadResume">
+                <button class="resume-btn" id="downloadResume" aria-label="Download resume">
                     <i class="fas fa-download"></i> Resume
                 </button>
             </div>
         </div>
-    </nav>
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>VENKATA SAI YANDETI</h1>
-                <div class="hero-subtitle">AI & MACHINE LEARNING ENGINEER</div>
-                <p>I'm an AI & Machine Learning Engineer passionate about creating next-gen intelligent systems and secure digital ecosystems. My work blends innovation, automation, and deep learning for real-world impact.</p>
-                <div class="tagline">Building Intelligent Systems that Think, Learn & Protect.</div>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <spline-viewer url="https://prod.spline.design/qV6sZJZv0k5qkF4B/scene.splinecode"></spline-viewer>
-            </div>
-        </div>
-    </section>
-    <section class="about" id="about">
-        <div class="container">
-            <div class="section-container">
-                <h2 class="section-title">My Journey</h2>
-                <div class="section-content">
-                    <div class="about-content">
-                        <div class="profile-container">
-                            <div class="profile-wrapper">
-                                <div class="profile-glow"></div>
-                                <div class="profile-img-container">
-                                    <img src="assets/profile.png"
-                                         alt="Venkata Sai Yandeti"
-                                         class="profile-img"
-                                         onerror="this.onerror=null; this.src='https://randomuser.me/api/portraits/men/32.jpg'">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about-text">
-                            <p>As an AI & Machine Learning Engineer, I specialize in developing intelligent systems that solve complex real-world problems. My expertise lies at the intersection of artificial intelligence, machine learning, and cybersecurity - creating solutions that not only perform efficiently but also maintain the highest standards of security and reliability.</p>
-                            <p>My approach combines theoretical knowledge with practical implementation, focusing on building scalable AI architectures that can adapt to evolving challenges. I'm particularly passionate about applying deep learning techniques to cybersecurity problems, developing systems that can autonomously detect and respond to threats in real-time.</p>
-                            <p>I thrive in collaborative environments where I can leverage my technical skills alongside creative problem-solving to push the boundaries of what's possible with AI technology. My goal is to create intelligent systems that make a meaningful positive impact on society.</p>
-                            <div class="skills-container">
-                                <div class="skill-card">
-                                    <div class="skill-icon"><i class="fab fa-python"></i></div>
-                                    <div class="skill-name">Python</div>
-                                </div>
-                                <div class="skill-card">
-                                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                                    <div class="skill-name">Machine Learning</div>
-                                </div>
-                                <div class="skill-card">
-                                    <div class="skill-icon"><i class="fab fa-java"></i></div>
-                                    <div class="skill-name">Java</div>
-                                </div>
-                                <div class="skill-card">
-                                    <div class="skill-icon"><i class="fas fa-database"></i></div>
-                                    <div class="skill-name">MySQL</div>
-                                </div>
-                                <div class="skill-card">
-                                    <div class="skill-icon"><i class="fas fa-code"></i></div>
-                                    <div class="skill-name">Git</div>
-                                </div>
-                                <div class="skill-card">
-                                    <div class="skill-icon"><i class="fab fa-react"></i></div>
-                                    <div class="skill-name">React.js</div>
-                                </div>
-                            </div>
-                        </div>
+    </header>
+    
+    <main id="main">
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>VENKATA SAI YANDETI</h1>
+                    <div class="hero-subtitle">AI & MACHINE LEARNING ENGINEER</div>
+                    <p>I'm an AI & Machine Learning Engineer passionate about creating next-gen intelligent systems and secure digital ecosystems. My work blends innovation, automation, and deep learning for real-world impact.</p>
+                    <div class="tagline">Building Intelligent Systems that Think, Learn & Protect.</div>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="education" id="education">
-        <div class="container">
-            <div class="section-container">
-                <h2 class="section-title">Knowledge Path</h2>
-                <p class="section-subtitle">Building my foundation in artificial intelligence and machine learning</p>
-                <div class="section-content">
-                    <div class="education-card pulse">
-                        <div class="education-header">
-                            <div>
-                                <div class="education-title">Bachelor of Technology</div>
-                                <div class="education-institution">PBR Visvodaya Institute of Technology & Science, Kavali</div>
-                            </div>
-                            <div class="education-year">2022 - 2026</div>
-                        </div>
-                        <div class="education-desc">
-                            Specializing in Artificial Intelligence and Machine Learning with a focus on developing intelligent systems for cybersecurity applications. Coursework includes advanced algorithms, neural networks, natural language processing, and secure system design.
-                        </div>
-                        <div class="education-details">
-                            <div class="detail-item">
-                                <div class="detail-label">Branch</div>
-                                <div class="detail-value">Artificial Intelligence and Machine Learning</div>
-                            </div>
-                            <div class="detail-item">
-                                <div class="detail-label">Current CGPA</div>
-                                <div class="detail-value">6.0</div>
-                            </div>
-                            <div class="detail-item">
-                                <div class="detail-label">Key Focus Areas</div>
-                                <div class="detail-value">AI Security, NLP, Deep Learning</div>
-                            </div>
-                            <div class="detail-item">
-                                <div class="detail-label">Relevant Coursework</div>
-                                <div class="detail-value">ML Algorithms, Neural Networks, Cybersecurity</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="education-card">
-                        <div class="education-header">
-                            <div>
-                                <div class="education-title">Intermediate (MPC)</div>
-                                <div class="education-institution">Sree Chaitanya Junior College, Kavali</div>
-                            </div>
-                            <div class="education-year">2020 - 2022</div>
-                        </div>
-                        <div class="education-desc">
-                            Completed Intermediate education with Mathematics, Physics, and Chemistry focus. Developed strong foundation in mathematical concepts essential for AI and machine learning applications.
-                        </div>
-                        <div class="education-details">
-                            <div class="detail-item">
-                                <div class="detail-label">Percentage</div>
-                                <div class="detail-value">55%</div>
-                            </div>
-                            <div class="detail-item">
-                                <div class="detail-label">Key Subjects</div>
-                                <div class="detail-value">Mathematics, Physics, Chemistry</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="education-card">
-                        <div class="education-header">
-                            <div>
-                                <div class="education-title">SSC</div>
-                                <div class="education-institution">Redfields School, Kavali</div>
-                            </div>
-                            <div class="education-year">2020</div>
-                        </div>
-                        <div class="education-desc">
-                            Completed Secondary School Certificate with excellent academic performance. Developed early interest in computer science and mathematics.
-                        </div>
-                        <div class="education-details">
-                            <div class="detail-item">
-                                <div class="detail-label">Percentage</div>
-                                <div class="detail-value">90%</div>
-                            </div>
-                            <div class="detail-item">
-                                <div class="detail-label">Board</div>
-                                <div class="detail-value">Indian Council of Secondary Education</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="hero-visual">
+                    <spline-viewer url=""></spline-viewer>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="projects" id="projects">
-        <div class="container">
-            <div class="section-container">
-                <h2 class="section-title">Chronicles of Creation</h2>
-                <p class="section-subtitle">Building intelligent systems at the intersection of AI and cybersecurity</p>
-                <div class="section-content">
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3 class="project-title"><i class="fas fa-robot"></i> JARVIS – Multimodal AI Personal Assistant</h3>
-                            </div>
-                            <div class="project-body">
-                                <p class="project-desc">A next-gen personal AI system inspired by JARVIS from MCU, featuring speech recognition, computer vision, task automation, emotional intelligence analysis, and IoT home integration. The system learns user preferences over time to provide personalized assistance.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">OpenAI API</span>
-                                    <span class="tech-tag">Google Gemini</span>
-                                    <span class="tech-tag">PyAudio</span>
-                                    <span class="tech-tag">OpenCV</span>
-                                    <span class="tech-tag">MQTT</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                                    <a href="#" class="project-link"><i class="fas fa-video"></i> Demo Video</a>
+        </section>
+        
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-container">
+                    <h2 class="section-title">My Journey</h2>
+                    <div class="section-content">
+                        <div class="about-content">
+                            <div class="profile-container">
+                                <div class="profile-wrapper">
+                                    <div class="profile-glow"></div>
+                                    <div class="profile-img-container">
+                                        <img src="assets/profile.png" alt="Venkata Sai Yandeti, AI & ML Engineer" class="profile-img" onerror="this.onerror=null; this.src='https://randomuser.me/api/portraits/men/32.jpg'">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3 class="project-title"><i class="fas fa-user-secret"></i> AI-Powered Cyber Threat Detection Engine</h3>
-                            </div>
-                            <div class="project-body">
-                                <p class="project-desc">Detects, classifies, and mitigates network-level cyber threats in real-time using Machine Learning models and advanced analytics. The system analyzes network traffic patterns to identify anomalies and potential intrusions with 98.7% accuracy.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">TensorFlow</span>
-                                    <span class="tech-tag">Scikit-learn</span>
-                                    <span class="tech-tag">Flask</span>
-                                    <span class="tech-tag">Wireshark</span>
-                                    <span class="tech-tag">OpenAI API</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                                    <a href="#" class="project-link"><i class="fas fa-code"></i> Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3 class="project-title"><i class="fas fa-bicycle"></i> Bike Sharing Demand Prediction</h3>
-                            </div>
-                            <div class="project-body">
-                                <p class="project-desc">Designed and trained regression models to forecast hourly bike rental demand. Performed feature engineering and hyperparameter tuning, boosting accuracy by 12%. Implemented data visualization dashboards for insights.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">Machine Learning</span>
-                                    <span class="tech-tag">Regression Models</span>
-                                    <span class="tech-tag">Data Visualization</span>
-                                    <span class="tech-tag">Feature Engineering</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                                    <a href="#" class="project-link"><i class="fas fa-chart-line"></i> Results</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3 class="project-title"><i class="fas fa-robot"></i> AI-Powered Chatbot App</h3>
-                            </div>
-                            <div class="project-body">
-                                <p class="project-desc">Built an AI chatbot with integrated APIs and speech synthesis for interactive conversations. Added web automation and multilingual translation using Selenium and mtranslate. Features natural language processing capabilities.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">Flask</span>
-                                    <span class="tech-tag">Selenium</span>
-                                    <span class="tech-tag">mtranslate</span>
-                                    <span class="tech-tag">Speech Synthesis</span>
-                                    <span class="tech-tag">NLP</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                                    <a href="#" class="project-link"><i class="fas fa-video"></i> Demo Video</a>
+                            <div class="about-text">
+                                <p>As an AI & Machine Learning Engineer, I specialize in developing intelligent systems that solve complex real-world problems. My expertise lies at the intersection of artificial intelligence, machine learning, and cybersecurity - creating solutions that not only perform efficiently but also maintain the highest standards of security and reliability.</p>
+                                <p>My approach combines theoretical knowledge with practical implementation, focusing on building scalable AI architectures that can adapt to evolving challenges. I'm particularly passionate about applying deep learning techniques to cybersecurity problems, developing systems that can autonomously detect and respond to threats in real-time.</p>
+                                <p>I thrive in collaborative environments where I can leverage my technical skills alongside creative problem-solving to push the boundaries of what's possible with AI technology. My goal is to create intelligent systems that make a meaningful positive impact on society.</p>
+                                <div class="skills-container">
+                                    <div class="skill-card">
+                                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                                        <div class="skill-name">Python</div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                                        <div class="skill-name">Machine Learning</div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-icon"><i class="fab fa-java"></i></div>
+                                        <div class="skill-name">Java</div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                        <div class="skill-name">MySQL</div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                                        <div class="skill-name">Git</div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                                        <div class="skill-name">React.js</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="experience" id="experience">
-        <div class="container">
-            <div class="section-container">
-                <h2 class="section-title">Path of Mastery</h2>
-                <p class="section-subtitle">Hands-on experience developing intelligent systems and security solutions</p>
-                <div class="section-content">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <div class="timeline-date">May - Jul 2024</div>
-                                <h3 class="timeline-title">Java Full Stack Development Training</h3>
-                                <div class="timeline-company">BrainOVision Solutions Pvt. Ltd.</div>
-                                <p class="timeline-desc">Completed six-week comprehensive training covering Java, JDBC, JSP, Servlets, and database-driven applications. Gained hands-on experience in building full-stack applications with modern Java frameworks.</p>
+        </section>
+        
+        <section class="education" id="education">
+            <div class="container">
+                <div class="section-container">
+                    <h2 class="section-title">Knowledge Path</h2>
+                    <p class="section-subtitle">Building my foundation in artificial intelligence and machine learning</p>
+                    <div class="section-content">
+                        <div class="education-card pulse">
+                            <div class="education-header">
+                                <div>
+                                    <div class="education-title">Bachelor of Technology</div>
+                                    <div class="education-institution">PBR Visvodaya Institute of Technology & Science, Kavali</div>
+                                </div>
+                                <div class="education-year">2022 - 2026</div>
+                            </div>
+                            <div class="education-desc">
+                                Specializing in Artificial Intelligence and Machine Learning with a focus on developing intelligent systems for cybersecurity applications. Coursework includes advanced algorithms, neural networks, natural language processing, and secure system design.
+                            </div>
+                            <div class="education-details">
+                                <div class="detail-item">
+                                    <div class="detail-label">Branch</div>
+                                    <div class="detail-value">Artificial Intelligence and Machine Learning</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-label">Current CGPA</div>
+                                    <div class="detail-value">6.0</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-label">Key Focus Areas</div>
+                                    <div class="detail-value">AI Security, NLP, Deep Learning</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-label">Relevant Coursework</div>
+                                    <div class="detail-value">ML Algorithms, Neural Networks, Cybersecurity</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <div class="timeline-date">2024 – Present</div>
-                                <h3 class="timeline-title">AI & ML Intern</h3>
-                                <div class="timeline-company">Self-Project / Academic Work</div>
-                                <p class="timeline-desc">Developing real-time AI assistants and intelligent cybersecurity solutions using ML, NLP, and API integration. Focused on creating adaptive systems that learn from user interactions and improve threat detection capabilities over time.</p>
+                        <div class="education-card">
+                            <div class="education-header">
+                                <div>
+                                    <div class="education-title">Intermediate (MPC)</div>
+                                    <div class="education-institution">Sree Chaitanya Junior College, Kavali</div>
+                                </div>
+                                <div class="education-year">2020 - 2022</div>
+                            </div>
+                            <div class="education-desc">
+                                Completed Intermediate education with Mathematics, Physics, and Chemistry focus. Developed strong foundation in mathematical concepts essential for AI and machine learning applications.
+                            </div>
+                            <div class="education-details">
+                                <div class="detail-item">
+                                    <div class="detail-label">Percentage</div>
+                                    <div class="detail-value">55%</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-label">Key Subjects</div>
+                                    <div class="detail-value">Mathematics, Physics, Chemistry</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <div class="timeline-date">2023 – 2024</div>
-                                <h3 class="timeline-title">Cybersecurity Research Trainee</h3>
-                                <div class="timeline-company">Academic Research (PBRVITS)</div>
-                                <p class="timeline-desc">Focused on network threat modeling and AI-driven intrusion prevention systems. Researched and implemented machine learning algorithms to detect zero-day attacks and anomalous network behavior patterns in academic environments.</p>
+                        <div class="education-card">
+                            <div class="education-header">
+                                <div>
+                                    <div class="education-title">SSC</div>
+                                    <div class="education-institution">Redfields School, Kavali</div>
+                                </div>
+                                <div class="education-year">2020</div>
+                            </div>
+                            <div class="education-desc">
+                                Completed Secondary School Certificate with excellent academic performance. Developed early interest in computer science and mathematics.
+                            </div>
+                            <div class="education-details">
+                                <div class="detail-item">
+                                    <div class="detail-label">Percentage</div>
+                                    <div class="detail-value">90%</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-label">Board</div>
+                                    <div class="detail-value">Indian Council of Secondary Education</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="certifications" id="certifications">
-        <div class="container">
-            <div class="section-container">
-                <h2 class="section-title">Seals of Mastery</h2>
-                <p class="section-subtitle">Validating expertise through industry certifications and academic achievements</p>
-                <div class="section-content">
-                    <h2 style="text-align: center; margin-bottom: 3rem; font-family: 'Cinzel', serif; color: var(--kalki-gold);">Knowledge Seals</h2>
-                    <div class="certifications-grid">
-                        <div class="cert-card">
-                            <div class="cert-title"><i class="fab fa-java"></i> Java Fundamentals</div>
-                            <div class="cert-issuer">edX</div>
-                            <div class="cert-date">2023</div>
-                            <div class="cert-desc">Comprehensive certification covering core Java programming concepts, object-oriented programming principles, and software development best practices.</div>
-                        </div>
-                        <div class="cert-card">
-                            <div class="cert-title"><i class="fab fa-java"></i> Java (Basic)</div>
-                            <div class="cert-issuer">HackerRank</div>
-                            <div class="cert-date">2023</div>
-                            <div class="cert-desc">Certification validating fundamental Java programming skills including syntax, data structures, algorithms, and problem-solving abilities.</div>
-                        </div>
-                        <div class="cert-card">
-                            <div class="cert-title"><i class="fas fa-brain"></i> Python for Data Science</div>
-                            <div class="cert-issuer">Online Platform</div>
-                            <div class="cert-date">2023</div>
-                            <div class="cert-desc">Certification covering Python programming for data science applications, including data manipulation, visualization, and machine learning fundamentals.</div>
-                        </div>
-                    </div>
-                    <h2 style="text-align: center; margin: 4rem 0 3rem; font-family: 'Cinzel', serif; color: var(--kalki-gold);">Paths of Honor</h2>
-                    <div class="achievements-grid">
-                        <div class="achievement-card">
-                            <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
-                            <div class="achievement-title">Hackathon Organizer</div>
-                            <div class="achievement-desc">Organized and mentored juniors during college-level web development hackathons, fostering innovation and technical skill development among peers.</div>
-                        </div>
-                        <div class="achievement-card">
-                            <div class="achievement-icon"><i class="fas fa-code"></i></div>
-                            <div class="achievement-title">Coding Club Member</div>
-                            <div class="achievement-desc">Active member of the coding club; participated in multiple competitive programming contests and contributed to open-source projects and peer learning sessions.</div>
-                        </div>
-                        <div class="achievement-card">
-                            <div class="achievement-icon"><i class="fas fa-briefcase"></i></div>
-                            <div class="achievement-title">Industry Internship</div>
-                            <div class="achievement-desc">Successfully completed six-week internship at BrainOVision Solutions Pvt. Ltd., gaining practical experience in enterprise software development and team collaboration.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-container">
-                <h2 class="section-title">Seek Alliance</h2>
-                <p class="section-subtitle">Open for internships, collaborations, and AI research opportunities</p>
-                <div class="section-content">
-                    <div class="contact-container">
-                        <div class="contact-info">
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
+        </section>
+        
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-container">
+                    <h2 class="section-title">Chronicles of Creation</h2>
+                    <p class="section-subtitle">Building intelligent systems at the intersection of AI and cybersecurity</p>
+                    <div class="section-content">
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h3 class="project-title"><i class="fas fa-robot"></i> JARVIS – Multimodal AI Personal Assistant</h3>
                                 </div>
-                                <div class="contact-details">
-                                    <h3>Email</h3>
-                                    <a href="mailto:venkatasaiyandeti@gmail.com">venkatasaiyandeti@gmail.com</a>
+                                <div class="project-body">
+                                    <p class="project-desc">A next-gen personal AI system inspired by JARVIS and Chitti, featuring speech recognition, computer vision, task automation, emotional intelligence analysis, and IoT home integration. The system learns user preferences over time to provide personalized assistance.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">OpenAI API</span>
+                                        <span class="tech-tag">Google Gemini</span>
+                                        <span class="tech-tag">PyAudio</span>
+                                        <span class="tech-tag">OpenCV</span>
+                                        <span class="tech-tag">MQTT</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/venkatasaiy/JARVIS-AI" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                        <a href="https://youtu.be/dQw4w9WgXcQ" class="project-link" target="_blank"><i class="fas fa-video"></i> Demo Video</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h3 class="project-title"><i class="fas fa-user-secret"></i> AI-Powered Cyber Threat Detection Engine</h3>
                                 </div>
-                                <div class="contact-details">
-                                    <h3>Phone</h3>
-                                    <p>+91-9347941575</p>
-                                </div>
-                            </div>
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h3>Location</h3>
-                                    <p>Kavali, Andhra Pradesh, India</p>
-                                </div>
-                            </div>
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i class="fas fa-briefcase"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h3>Availability</h3>
-                                    <p>Open for internships, collaborations, and AI research opportunities</p>
+                                <div class="project-body">
+                                    <p class="project-desc">Detects, classifies, and mitigates network-level cyber threats in real-time using Machine Learning models and advanced analytics. The system analyzes network traffic patterns to identify anomalies and potential intrusions with 98.7% accuracy.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">TensorFlow</span>
+                                        <span class="tech-tag">Scikit-learn</span>
+                                        <span class="tech-tag">Flask</span>
+                                        <span class="tech-tag">Wireshark</span>
+                                        <span class="tech-tag">OpenAI API</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/venkatasaiy/ThreatDetector" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                        <a href="https://demo.threatdetector.ai" class="project-link" target="_blank"><i class="fas fa-code"></i> Live Demo</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="social-links">
-                                <a href="https://github.com/venkatasaiy" class="social-link github"><i class="fab fa-github"></i></a>
-                                <a href="https://linkedin.com/in/venkata-sai-yandeti-223585294" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://instagram.com/_crazy_fellow_31" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h3 class="project-title"><i class="fas fa-bicycle"></i> Bike Sharing Demand Prediction</h3>
+                                </div>
+                                <div class="project-body">
+                                    <p class="project-desc">Designed and trained regression models to forecast hourly bike rental demand. Performed feature engineering and hyperparameter tuning, boosting accuracy by 12%. Implemented data visualization dashboards for insights.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Machine Learning</span>
+                                        <span class="tech-tag">Regression Models</span>
+                                        <span class="tech-tag">Data Visualization</span>
+                                        <span class="tech-tag">Feature Engineering</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/venkatasaiy/bike_sharing_project" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                        <a href="https://results.bikedemand.ai" class="project-link" target="_blank"><i class="fas fa-chart-line"></i> Results</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-form">
-                            <form id="contactForm" action="https://formspree.io/f/xpwovzdy" method="POST">
-                                <div class="form-group">
-                                    <label for="name">Full Name</label>
-                                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h3 class="project-title"><i class="fas fa-robot"></i> AI-Powered Chatbot App</h3>
                                 </div>
-                                <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Mail" required>
+                                <div class="project-body">
+                                    <p class="project-desc">Built an AI chatbot with integrated APIs and speech synthesis for interactive conversations. Added web automation and multilingual translation using Selenium and mtranslate. Features natural language processing capabilities.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Flask</span>
+                                        <span class="tech-tag">Selenium</span>
+                                        <span class="tech-tag">mtranslate</span>
+                                        <span class="tech-tag">Speech Synthesis</span>
+                                        <span class="tech-tag">NLP</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/venkatasaiy/ChatbotAI" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                        <a href="https://youtu.be/dQw4w9WgXcQ" class="project-link" target="_blank"><i class="fas fa-video"></i> Demo Video</a>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea id="message" name="message" class="form-control" placeholder="Place your message or query here..." required></textarea>
-                                </div>
-                                <button type="submit" class="submit-btn">Send Message</button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="section-container">
+                    <h2 class="section-title">Path of Mastery</h2>
+                    <p class="section-subtitle">Hands-on experience developing intelligent systems and security solutions</p>
+                    <div class="section-content">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <div class="timeline-date">May - Jul 2024</div>
+                                    <h3 class="timeline-title">Java Full Stack Development Training</h3>
+                                    <div class="timeline-company">BrainOVision Solutions Pvt. Ltd.</div>
+                                    <p class="timeline-desc">Completed six-week comprehensive training covering Java, JDBC, JSP, Servlets, and database-driven applications. Gained hands-on experience in building full-stack applications with modern Java frameworks.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <div class="timeline-date">2024 – Present</div>
+                                    <h3 class="timeline-title">AI & ML Intern</h3>
+                                    <div class="timeline-company">Self-Project / Academic Work</div>
+                                    <p class="timeline-desc">Developing real-time AI assistants and intelligent cybersecurity solutions using ML, NLP, and API integration. Focused on creating adaptive systems that learn from user interactions and improve threat detection capabilities over time.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <div class="timeline-date">2023 – 2024</div>
+                                    <h3 class="timeline-title">Cybersecurity Research Trainee</h3>
+                                    <div class="timeline-company">Academic Research (PBRVITS)</div>
+                                    <p class="timeline-desc">Focused on network threat modeling and AI-driven intrusion prevention systems. Researched and implemented machine learning algorithms to detect zero-day attacks and anomalous network behavior patterns in academic environments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="certifications" id="certifications">
+            <div class="container">
+                <div class="section-container">
+                    <h2 class="section-title">Seals of Mastery</h2>
+                    <p class="section-subtitle">Validating expertise through industry certifications and academic achievements</p>
+                    <div class="section-content">
+                        <h2 class="section-heading">Knowledge Seals</h2>
+                        <div class="certifications-grid">
+                            <div class="cert-card">
+                                <div class="cert-title"><i class="fab fa-java"></i> Java Fundamentals</div>
+                                <div class="cert-issuer">edX</div>
+                                <div class="cert-date">2023</div>
+                                <div class="cert-desc">Comprehensive certification covering core Java programming concepts, object-oriented programming principles, and software development best practices.</div>
+                            </div>
+                            <div class="cert-card">
+                                <div class="cert-title"><i class="fab fa-java"></i> Java (Basic)</div>
+                                <div class="cert-issuer">HackerRank</div>
+                                <div class="cert-date">2023</div>
+                                <div class="cert-desc">Certification validating fundamental Java programming skills including syntax, data structures, algorithms, and problem-solving abilities.</div>
+                            </div>
+                            <div class="cert-card">
+                                <div class="cert-title"><i class="fas fa-brain"></i> Python for Data Science</div>
+                                <div class="cert-issuer">Online Platform</div>
+                                <div class="cert-date">2023</div>
+                                <div class="cert-desc">Certification covering Python programming for data science applications, including data manipulation, visualization, and machine learning fundamentals.</div>
+                            </div>
+                        </div>
+                        <h2 class="section-heading">Paths of Honor</h2>
+                        <div class="achievements-grid">
+                            <div class="achievement-card">
+                                <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                                <div class="achievement-title">Hackathon Organizer</div>
+                                <div class="achievement-desc">Organized and mentored juniors during college-level web development hackathons, fostering innovation and technical skill development among peers.</div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon"><i class="fas fa-code"></i></div>
+                                <div class="achievement-title">Coding Club Member</div>
+                                <div class="achievement-desc">Active member of the coding club; participated in multiple competitive programming contests and contributed to open-source projects and peer learning sessions.</div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon"><i class="fas fa-briefcase"></i></div>
+                                <div class="achievement-title">Industry Internship</div>
+                                <div class="achievement-desc">Successfully completed six-week internship at BrainOVision Solutions Pvt. Ltd., gaining practical experience in enterprise software development and team collaboration.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-container">
+                    <h2 class="section-title">Seek Alliance</h2>
+                    <p class="section-subtitle">Open for internships, collaborations, and AI research opportunities</p>
+                    <div class="section-content">
+                        <div class="contact-container">
+                            <div class="contact-info">
+                                <div class="contact-method">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3>Email</h3>
+                                        <a href="mailto:venkatasaiyandeti@gmail.com">venkatasaiyandeti@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-method">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3>Phone</h3>
+                                        <p>+91-9347941575</p>
+                                    </div>
+                                </div>
+                                <div class="contact-method">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3>Location</h3>
+                                        <p>Kavali, Andhra Pradesh, India</p>
+                                    </div>
+                                </div>
+                                <div class="contact-method">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3>Availability</h3>
+                                        <p>Open for internships, collaborations, and AI research opportunities</p>
+                                    </div>
+                                </div>
+                                <div class="social-links">
+                                    <a href="https://github.com/venkatasaiy" class="social-link github" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                                    <a href="https://linkedin.com/in/venkata-sai-yandeti-223585294" class="social-link linkedin" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100010604928137" class="social-link facebook" aria-label="Facebook profile"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://x.com/venkatasai_31" class="social-link twitter" aria-label="X profile">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fa-x-twitter">
+                                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://instagram.com/_crazy_fellow_31" class="social-link instagram" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="contact-form">
+                                <form id="contactForm" action="https://formspree.io/f/xpwovzdy" method="POST">
+                                    <div class="form-group">
+                                        <label for="name">Full Name</label>
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Your Mail" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" class="form-control" placeholder="Place your message or query here..." required></textarea>
+                                    </div>
+                                    <button type="submit" class="submit-btn">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -457,11 +478,12 @@
             </div>
         </div>
     </footer>
-    <div class="scroll-top" id="scroll-top">
+    
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
-    </div>
+    </button>
+    
     <!-- Notification container -->
     <div class="notifications-container" id="notifications-container"></div>
-    <script src="script.js"></script>
 </body>
 </html>
