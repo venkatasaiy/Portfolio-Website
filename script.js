@@ -105,7 +105,7 @@ function initMobileMenu() {
         link.addEventListener('click', closeMobileMenu);
     });
     
-    // Close mobile menu when window is resized to desktop size
+    // Keep this local resize listener to ensure menu closes if user manually resizes within component lifecycle
     window.addEventListener('resize', () => {
         if(window.innerWidth > 1000) {
             closeMobileMenu();
@@ -414,24 +414,44 @@ function showWelcomeNotification() {
     showNotification('Welcome!', 'Explore my portfolio to learn about my AI & ML projects and experience.', 'info');
 }
 
-// Handle window resize for responsive adjustments
-let resizeTimer;
-window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-        // Re-check scroll position after resize
-        const scrollTopBtn = document.getElementById('scroll-top');
-        if (scrollTopBtn) {
-            if(window.pageYOffset > 400) {
-                scrollTopBtn.classList.add('active');
-            } else {
-                scrollTopBtn.classList.remove('active');
-            }
+/* ===== orientation & responsive helpers (appended) =====
+   This IIFE handles:
+   - closing mobile menu on orientation change
+   - forcing a short reflow/repaint after orientation changes on some browsers
+   - debounced resize handling to keep nav/mobile state consistent across breakpoints
+   - also re-checks scroll-top button visibility on resize
+*/
+(function() {
+  // Close mobile nav on orientation change to avoid stuck open menu
+  window.addEventListener('orientationchange', function() {
+    try { closeMobileMenu(); } catch(e) { /* graceful fallback if function missing */ }
+    // On some mobile browsers dimensions change after orientation; force a short reflow/repaint
+    setTimeout(() => { 
+      document.body.style.display = 'none'; 
+      // reading offsetHeight forces reflow
+      document.body.offsetHeight; 
+      document.body.style.display = ''; 
+    }, 120);
+  });
+
+  // When window resizes quickly (desktop/devices), ensure nav state is consistent
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      // Re-check scroll-top button visibility after resize
+      const scrollTopBtn = document.getElementById('scroll-top');
+      if (scrollTopBtn) {
+        if (window.pageYOffset > 400) {
+          scrollTopBtn.classList.add('active');
+        } else {
+          scrollTopBtn.classList.remove('active');
         }
-        
-        // Close mobile menu on resize to desktop
-        if (window.innerWidth > 1000) {
-            closeMobileMenu();
-        }
-    }, 250);
-});
+      }
+
+      if (window.innerWidth > 1000) {
+        try { closeMobileMenu(); } catch(e) {}
+      }
+    }, 150);
+  });
+})();
