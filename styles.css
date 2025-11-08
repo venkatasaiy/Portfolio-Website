@@ -2143,3 +2143,40 @@ footer::before {
     .hero-content { padding: 1rem; }
     #experience .timeline-item .timeline-content { padding: 0.9rem 0.9rem !important; }
 }
+body {
+    /* Your existing styles... */
+    background-image: url('assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Creates subtle parallax on scroll */
+    background-repeat: no-repeat;
+}
+
+/* Dark overlay for readability (adjust opacity as needed) */
+body::before {
+    /* Your existing grain overlay... */
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 3, 1, 0.75); /* Semi-transparent Kalki-deep for contrast */
+    z-index: -1; /* Behind content but over bg */
+    pointer-events: none;
+}
+
+/* Responsive tweaks for portrait orientation */
+@media (max-width: 768px) {
+    body {
+        background-position: center top; /* Prioritizes top for mobile scroll */
+        background-attachment: scroll; /* Avoids iOS fixed bugs */
+    }
+}
+
+/* High-DPI/Retina support */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+        background-image: url('assets/bg@2x.png'); /* If you generate a 2x version */
+    }
+}
